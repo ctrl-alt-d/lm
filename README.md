@@ -10,7 +10,7 @@
 
 | TEMA   | RA   | Nom                             |   Hores | Data inici - Data fi                                  |
 |:-------|:-----|:--------------------------------|--------:|:------------------------------------------------------|
-| Tema_1 | R1   | Llenguatge de Marques           |       5 | 16 de de setembre de 2025 - 30 de de setembre de 2025 |
+| Tema_1 | R1   | [Llenguatge de Marques](./TEMA_1/)           |       5 | 16 de de setembre de 2025 - 30 de de setembre de 2025 |
 | Tema_2 | R2   | HTML i CSS                      |      10 | 7 de d’octubre de 2025 - 4 de de novembre de 2025     |
 | Tema_3 | R3   | JavaScript                      |       4 | 11 de de novembre de 2025 - 18 de de novembre de 2025 |
 | Tema_4 | R6   | Persistència                    |       6 | 25 de de novembre de 2025 - 16 de de desembre de 2025 |
@@ -18,6 +18,7 @@
 | Tema_6 | R5   | Conversió                       |       9 | 24 de de febrer de 2026 - 24 de de març de 2026       |
 | Tema_7 | R7   | Sistemes de gestió empresarials |       9 | 7 de d’abril de 2026 - 21 de d’abril de 2026          |
 
+>A partir del 27 de d’abril de 2026 fins final de curs posarem en pràctica llenguatge de marques al mini-projecte DAW.
 
 ```math
 QM = 0.8 \cdot (0.1 \cdot RA_1 + 0.2 \cdot RA_2 + 0.1 \cdot RA_3 + 0.2 \cdot RA_4 + 0.1 \cdot RA_5 + 0.2 \cdot RA_6 + 0.1 \cdot RA_7) + 0.1 \cdot CC + 0.1 \cdot EE
