@@ -16,11 +16,16 @@ Markdown és un llenguatge de marques senzill que s'utilitza per formatar text d
 
 3. **Llistes**
    - Les llistes no numerades es creen utilitzant guions o asteriscs:
+```
      - Element de llista 1
      - Element de llista 2
+```
+
    - Les llistes numerades es creen simplement utilitzant números:
+```
      1. Primer element
      2. Segon element
+```
 
 4. **Enllaços**
    Els enllaços es creen utilitzant la sintaxi `[text](url)`. Per exemple:  

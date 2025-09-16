@@ -103,6 +103,8 @@ XML és un llenguatge de marques dissenyat per emmagatzemar i transportar dades.
 **Aplicabilitat:**
 És utilitzat en la transmissió de dades entre sistemes, especialment en entorns empresarials i governamentals, així com en arxius de configuració, documents estructurats i serveis web (com ara SOAP).
 
+---
+
 # XML: Exemple
 
 ```xml
