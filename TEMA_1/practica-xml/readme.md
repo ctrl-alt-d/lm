@@ -83,7 +83,7 @@ XML (Extensible Markup Language) és un llenguatge de marques utilitzat principa
   
   **Exemple**: Un servei web pot retornar una resposta en format XML.
   
-  ```xml
+```xml
   <?xml version="1.0" encoding="UTF-8"?>
   <resposta>
     <estat>èxit</estat>
