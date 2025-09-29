@@ -123,7 +123,7 @@ Codificar la informació de diversos menjars en format JSON.
 
 ### 2. Validació del document JSON
 
-Indica als estudiants que utilitzin un validor online de JSON, com [JSONLint](https://jsonlint.com/), per comprovar si el document té una estructura vàlida i una sintaxi correcta.
+Per ara podeu fer proves de validar el vostre JSON a [JSONLint](https://jsonlint.com/) per comprovar si el document té una estructura vàlida i una sintaxi correcta.
 
 ---
 
@@ -141,7 +141,7 @@ Feu modificacions en el document JSON per provocar errors, per exemple:
 {
   "menjars": [
     {
-      "nom": Pit de pollastre,  // Error: falta posar cometes al voltant del valor "Pit de pollastre"
+      "nom": Pit de pollastre,
       "kilocalories": 100,
       "proteines": 20,
       "greixos": 10
@@ -150,6 +150,7 @@ Feu modificacions en el document JSON per provocar errors, per exemple:
 }
 ```
 
+**Nota:** En aquest exemple, falta posar cometes al voltant del valor "Pit de pollastre".
 
 **Error detectat pel validor:**
 
@@ -170,19 +171,24 @@ Error: Parse error on line 3:
 
 ## Exercici: JSON a les respostes d'una API
 
-Donat d'alta [openweathermap](https://openweathermap.org/) i utilitza la API https://openweathermap.org/forecast5 per obtenir el temps que farà a Figueres els propers dies.
+Dóna't d'alta a [OpenWeatherMap](https://openweathermap.org/) i utilitza l'API de [pronòstic a 5 dies](https://openweathermap.org/forecast5) per obtenir el temps que farà a Figueres els propers dies.
 
 Hauràs de crear una API Key per poder fer les consultes.
+
+**Passos a seguir:**
+1. Registra't a OpenWeatherMap
+2. Genera la teva API Key
+3. Substitueix "f8f8f8f8f8f8f8f8f8f8f8ff8" per la teva API Key real
 
 La consulta la pots fer des del navegador, tindrà un format semblant a:
 
 ```
-https://api.openweathermap.org/data/2.5/forecast?lat=42.2670&lon=2.9617&appid=f8f8f8f8f8f8f8f8f8f8f8ff8
+https://api.openweathermap.org/data/2.5/forecast?lat=42.2670&lon=2.9617&appid=LA_TEVA_API_KEY
 ```
 
-El resultat serà un xml semblant a:
+El resultat serà un JSON semblant a:
 
-```xml
+```json
 {
   "cod": "200",
   "message": 0,
@@ -224,6 +230,7 @@ El resultat serà un xml semblant a:
       },
       "dt_txt": "2024-09-30 18:00:00"
     },
+    ...
 ```
 
 Un cop ho hagis fet, contesta:
@@ -231,6 +238,11 @@ Un cop ho hagis fet, contesta:
 * En quin format ens retorna les dades la API de openweathermap.
 * Quina avantatge té aquest format respecte que ens tornés les dades en un fitxer de text pla totes una sota de l'altre?
 
----
+## **Objectius d'aprenentatge generals:**
+- Comprendre la sintaxi bàsica de JSON
+- Aprendre a estructurar la informació de manera adequada en JSON
+- Aprendre a validar un document JSON i identificar errors comuns
+- Reconèixer l'ús de JSON en APIs reals
+- Analitzar les avantatges de JSON com a format d'intercanvi de dades
 
-Amb aquesta pràctica, els estudiants aprenen a estructurar la informació en JSON i poden veure com els errors de sintaxi són detectats pels validors.
+
