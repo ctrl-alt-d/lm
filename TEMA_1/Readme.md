@@ -8,3 +8,6 @@
 * Exercici 4:[Fitxer json](./practica-json/readme.md)
 * Exercici 5:[Format yaml](./practica-yaml/readme.md)
 
+
+* [Pràctica final](./practica-final.md)
+
