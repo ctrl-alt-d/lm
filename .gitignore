@@ -6,6 +6,9 @@ __pycache__/
 # C extensions
 *.so
 
+examen*.txt
+examen*.gift
+
 # Distribution / packaging
 .Python
 build/

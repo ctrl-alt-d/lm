@@ -11,7 +11,7 @@
 | TEMA   | RA   | Nom                             |   Hores | Data inici - Data fi                                  |
 |:-------|:-----|:--------------------------------|--------:|:------------------------------------------------------|
 | Tema_1 | R1   | [Llenguatge de Marques](./TEMA_1/)           |       5 | 16 de de setembre de 2025 - 30 de de setembre de 2025 |
-| Tema_2 | R2   | HTML i CSS                      |      10 | 7 de d’octubre de 2025 - 4 de de novembre de 2025     |
+| Tema_2 | R2   | [HTML i CSS](./TEMA_2/)                      |      10 | 7 de d’octubre de 2025 - 4 de de novembre de 2025     |
 | Tema_3 | R3   | JavaScript                      |       4 | 11 de de novembre de 2025 - 18 de de novembre de 2025 |
 | Tema_4 | R6   | Persistència                    |       6 | 25 de de novembre de 2025 - 16 de de desembre de 2025 |
 | Tema_5 | R4   | Validació                       |       9 | 13 de de gener de 2026 - 10 de de febrer de 2026      |
@@ -23,6 +23,8 @@
 ```math
 QM = 0.8 \cdot (0.1 \cdot RA_1 + 0.2 \cdot RA_2 + 0.1 \cdot RA_3 + 0.2 \cdot RA_4 + 0.1 \cdot RA_5 + 0.2 \cdot RA_6 + 0.1 \cdot RA_7) + 0.1 \cdot CC + 0.1 \cdot EE
 ```
+
+_Nota: Seguint les instruccions dictades pel centre (Ins Cendrassos), les `capacitats clau` **no** s'avaluen dins els `resultats d'aprenentatge`, sino que s'avaluen de manera independent i la seva nota se suma a la nota ponderada de les `RAs` amb un pes d'un 10% del total de la nota del `mòdul professional`. Llegir la `guia de l'estudiant` per més detalls._
 
 ## Resultats d'aprenentatge
 
