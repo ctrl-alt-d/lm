@@ -265,7 +265,7 @@ Per a grups de camps relacionats com ara botons de ràdio i caselles de selecci�
 <label for="email">Correu Electrònic:</label>
 <input type="email" id="email" name="email" required aria-describedby="email-help">
 <span id="email-help">Introdueix un correu electrònic vàlid, per exemple, exemple@domini.com</span>
-```html
+```
 
 Aquest exemple mostra com associar correctament una etiqueta amb un camp d'entrada i proporcionar text d'ajuda suplementari que serà anunciat pels lectors de pantalla.
 
