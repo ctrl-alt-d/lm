@@ -269,8 +269,3 @@ Per a grups de camps relacionats com ara botons de ràdio i caselles de selecci�
 
 Aquest exemple mostra com associar correctament una etiqueta amb un camp d'entrada i proporcionar text d'ajuda suplementari que serà anunciat pels lectors de pantalla.
 
-
-
-## Q&A
-
-Finalitzarem la sessió amb una secció de preguntes i respostes per aclarir qualsevol dubte i assegurar-nos que tots els participants han comprès els conceptes presentats.

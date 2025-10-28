@@ -75,3 +75,9 @@ LLegiu també l'us de [<caption>](https://developer.mozilla.org/en-US/docs/Web/H
   - Utilitzar les etiquetes `<thead>` i `<tbody>`.
 
 ---
+
+## 4. Ampliació
+
+- Investiga sobre:
+  - `tfoot` investiga quin paper juga a una taula. Posa un exemple d'ús.
+  - `th` com a encapcelament de línia. És posible? Posa un cas d'ús.
