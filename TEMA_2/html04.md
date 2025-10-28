@@ -212,6 +212,17 @@ Per a grups de camps relacionats com ara botons de ràdio i caselles de selecci�
 
 ## Exemples Pràctics
 
+Per fer aquests exercicis, pots fer que les dades s'enviin a `https://httpbin.org/post`, _"A simple HTTP Request & Response Service."_, fes-ho d'aquesta manera:
+
+```html
+<form action="https://httpbin.org/post" method="post" target="_blank">
+  <!-- camps del formulari -->
+  <button type="submit">Enviar</button>
+</form>
+```
+
+Quan enviis s'obrirà una pestanya amb un `json` que conté totes les dades que el navegador enviia al servidor.
+
 1. **Formulari de Registre Bàsic:**
    - Camps per a nom, correu electrònic, contrasenya, gènere, interessos.
    - Validació dels camps requerits.
