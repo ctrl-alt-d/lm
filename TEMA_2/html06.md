@@ -1,276 +1,166 @@
-# Propietats CSS fonamentals
+## Sessió 5: Introducció a CSS
 
-## Objectius
+### Objectius
+- Entendre què és CSS i la seva relació amb HTML.
+- Aplicar estils bàsics a un document HTML.
 
-Treballar amb les propietats de text, color i fons per millorar l'aparença d'una pàgina web.
+### Continguts
 
-## Continguts
+#### Definició de CSS
+CSS (Cascading Style Sheets) és el llenguatge utilitzat per definir l'aparença visual dels elements d'una pàgina HTML. Permet controlar aspectes com els colors, mides, tipus de lletra, marges, etc., i està dissenyat per separar la presentació del contingut.
 
-### 1. Propietats de text
+#### Selecció d'elements
+A CSS es poden seleccionar elements HTML de diferents maneres:
+- **Per etiquetes** (p, h1, div): Aplica l'estil a tots els elements d'aquest tipus.
+- **Per classes** (.nom-classe): S'utilitza per estilitzar múltiples elements amb la mateixa classe.
+- **Per ID** (#nom-id): Aplica l'estil a un sol element que tingui aquest ID específic.
 
-Aquestes propietats permeten ajustar l'estil del text per millorar la seva llegibilitat i aparença.
+#### Sintaxi bàsica de CSS
+Un conjunt de regles CSS segueix aquesta estructura:
 
-#### a. Font (font-family)
-Defineix el tipus de lletra utilitzat en el text.
-**Exemple:**
 ```css
-font-family: Arial, sans-serif;
+selector {
+  propietat: valor;
+}
 ```
 
-#### b. Grandària de la font (font-size)
-Ajusta la mida del text.
-**Exemple:**
+Per exemple:
+
 ```css
-font-size: 16px;
+p {
+  color: blue;
+  font-size: 16px;
+}
 ```
 
-#### c. Alineació de text (text-align)
-Permet alinear el text a l'esquerra, dreta, centre o justificar-lo.
-**Exemples:**
-```css
-text-align: left;
-text-align: right;
-text-align: center;
-text-align: justify;
-```
+#### Maneres d'inserir CSS
 
-#### d. Espaiat (line-height, letter-spacing)
-- **line-height**: Defineix l'espai entre línies de text.
-  **Exemple:**
-```css
-  line-height: 1.5;
-```
-
-- **letter-spacing**: Defineix l'espai entre caràcters.
-  **Exemple:**
-```css
-  letter-spacing: 2px;
-```
-
----
-
-### 2. Color de text i fons
-
-Aquestes propietats permeten definir el color del text i el color de fons d'un element.
-
-#### a. Color del text (color)
-Defineix el color del text.
-**Exemple:**
-```css
-color: #333333;
-```
-
-#### b. Color de fons (background-color)
-Defineix el color de fons d'un element.
-**Exemple:**
-```css
-background-color: #f0f0f0;
-```
-
----
-
-### 3. Imatges de fons
-
-Pots utilitzar una imatge com a fons d'un element amb la propietat background-image.
-**Exemple:**
-```css
-background-image: url('path/to/image.jpg');
-```
-
-També pots ajustar la repetició, posició i mida de la imatge de fons:
-
-- **background-repeat**: Defineix si la imatge es repeteix.
-  **Exemple:**
-```css
-  background-repeat: no-repeat;
-```
-
-- **background-position**: Defineix la posició de la imatge de fons.
-  **Exemple:**
-```css
-  background-position: center;
-```
-
-- **background-size**: Ajusta la mida de la imatge.
-  **Exemple:**
-```css
-  background-size: cover;
-```
-
-
-## Annex: Tipus de Grandària en CSS
-
-Quan definim la mida de les propietats en CSS, podem utilitzar diferents unitats. A continuació es descriuen les més comunes:
-
-### 1. Pixels (px)
-- **Descripció**: Una unitat fixa que representa un píxel a la pantalla.
-- **Ús comú**: Ideal per a dissenys on es necessita precisió en mides fixes.
-- **Exemple**: font-size: 16px;
-
-### 2. Em (em)
-- **Descripció**: Una unitat relativa basada en la mida de la font del seu element pare. 1em és igual a la mida de la font actual.
-- **Ús comú**: Per mides relatives que es redimensionin en funció de la mida de la font pare.
-- **Exemple**: font-size: 1.5em;
-
-### 3. Rem (rem)
-- **Descripció**: Similar a em, però basada en la mida de la font de l'arrel (root). 1rem és igual a la mida de la font de l'element root.
-- **Ús comú**: Per mantenir mides consistents i fàcilment escalables a tota la pàgina.
-- **Exemple**: font-size: 2rem;
-
-### 4. Percentatge (%)
-- **Descripció**: Una unitat relativa basada en el context de l'element pare. Per exemple, un font-size del 50% serà la meitat de la mida de la font de l'element pare.
-- **Ús comú**: Per fer que els elements s'adaptin de manera proporcional.
-- **Exemple**: width: 100%;
-
-### 5. Points (pt)
-- **Descripció**: Unitats de mida que s'utilitzen principalment per a mitjans impresos. Un punt (pt) és 1/72 d'una polzada.
-- **Ús comú**: Menys comú en disseny web, més utilitzat en CSS per a documents impresos.
-- **Exemple**: font-size: 12pt;
-
-### 6. Viewport Units (vw, vh)
-- **Descripció**: Unitats relatives a la mida de la finestra del navegador (viewport). 
-  - **vw**: Percentatge de l'ample de la finestra.
-  - **vh**: Percentatge de l'altura de la finestra.
-- **Ús comú**: Per fer que els elements s'adaptin a la mida de la finestra del navegador.
-- **Exemples**: 
-  - width: 50vw; (50% de l'ample de la finestra)
-  - height: 100vh; (100% de l'altura de la finestra)
-
-
-## Annex: Colors en CSS
-
-En CSS, podem definir els colors utilitzant diversos formats. Aquests són els més comuns:
-
-### 1. Colors per Nom
-- **Descripció**: Alguns colors comuns es poden definir simplement pel seu nom.
-- **Exemples**: 
-  - color: red;
-  - color: blue;
-  - color: green;
-
-### 2. Colors Hexadecimal (Hex)
-- **Descripció**: Es defineixen amb un codi de sis dígits precedit pel símbol #. Els primers dos dígits representen el vermell, els següents dos el verd, i els últims dos el blau.
-- **Exemples**: 
-  - color: #ff0000; (vermell)
-  - color: #00ff00; (verd)
-  - color: #0000ff; (blau)
-
-### 3. RGB (Red, Green, Blue)
-- **Descripció**: Es defineixen utilitzant valors decimals per a cada component de color, entre 0 i 255.
-- **Exemple**: 
-  - color: rgb(255, 0, 0); (vermell)
-  - color: rgb(0, 255, 0); (verd)
-  - color: rgb(0, 0, 255); (blau)
-
-### 4. RGBA (Red, Green, Blue, Alpha)
-- **Descripció**: És una extensió de RGB que inclou un canal alpha per a la transparència. El valor alpha va de 0 (completament transparent) a 1 (completament opac).
-- **Exemple**: 
-  - color: rgba(255, 0, 0, 0.5); (vermell amb 50% de transparència)
-
-### 5. HSL (Hue, Saturation, Lightness)
-- **Descripció**: Es defineixen en funció del to (hue), la saturació i la lluminositat. El to (hue) es mesura en graus (de 0 a 360), on cada valor representa un color específic al cercle cromàtic. La saturació i la lluminositat es representen en percentatge (0% és el valor més baix).
-- **Exemples**:
-  - color: hsl(0, 100%, 50%); (vermell pur)
-  - color: hsl(120, 100%, 50%); (verd pur)
-  - color: hsl(240, 100%, 50%); (blau pur)
-
-### 6. HSLA (Hue, Saturation, Lightness, Alpha)
-- **Descripció**: Similar a HSL però inclou un valor alpha que permet ajustar la transparència del color. El valor alpha va de 0 (completament transparent) a 1 (completament opac).
-- **Exemples**:
-  - color: hsla(0, 100%, 50%, 0.5); (vermell amb 50% de transparència)
-  - color: hsla(120, 100%, 50%, 0.3); (verd amb 30% de transparència)
-  - color: hsla(240, 100%, 50%, 0.8); (blau amb 80% de transparència)
-
-## Annex: Exemple d'HTML i CSS amb les Propietats Fonamentals
-
-### Exemple d'HTML
+- **Estils en línia**: Afegits directament a l'element HTML mitjançant l'atribut style. Exemple:
 
 ```html
-<!DOCTYPE html>
-<html lang="ca">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemple de Propietats CSS Fonamentals</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Benvinguts al meu lloc web</h1>
-        <p>Un exemple bàsic d'ús de propietats CSS fonamentals</p>
-    </header>
-    <main>
-        <section class="content">
-            <h2>Secció principal</h2>
-            <p>Aquest és un text amb diferents estils i colors per demostrar l'ús de les propietats CSS.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 El meu lloc web</p>
-    </footer>
-</body>
-</html>
+<p style="color: red;">Això és un paràgraf en vermell.</p>
 ```
 
----
+- **Estils en capçalera**: Definits dins l'etiqueta <style> dins del document HTML. Exemple:
 
-### Exemple de CSS
+```html
+<head>
+  <style>
+    p { color: green; }
+  </style>
+</head>
+```
+
+- **Arxius externs**: Es creen en un fitxer .css separat i s'inclou al document HTML amb l'etiqueta <link>. Exemple:
+
+```html
+<head>
+  <link rel="stylesheet" href="estils.css">
+</head>
+```
+
+### Selecció d'elements i lligam amb CSS
+
+#### Selecció per nom d'element
+Els selectors per nom d'element s'utilitzen per aplicar estils a tots els elements HTML d'un mateix tipus. Per exemple, si vols aplicar un estil a tots els paràgrafs d'una pàgina, utilitzes el nom de l'element p:
 
 ```css
-/* Estils generals */
-body {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #333;
-    background-color: #f9f9f9;
-    margin: 0;
-    padding: 20px;
-}
-
-/* Estils de l'encapçalament */
-header {
-    text-align: center;
-    background-color: #4CAF50;
-    color: white;
-    padding: 20px;
-}
-
-h1 {
-    font-size: 2.5em;
-    margin: 0;
-}
-
 p {
-    font-size: 1em;
-    letter-spacing: 1px;
-}
-
-/* Estils de la secció principal */
-.content {
-    background-color: #ffffff;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-top: 20px;
-}
-
-h2 {
-    text-align: left;
-    color: #4CAF50;
-}
-
-p {
-    color: #555;
-}
-
-/* Estils del peu de pàgina */
-footer {
-    text-align: center;
-    font-size: 0.9em;
-    color: #777;
-    margin-top: 20px;
+  color: blue;
+  font-size: 16px;
 }
 ```
 
+En aquest cas, tots els elements p del document tindran el text de color blau i una mida de lletra de 16px.
+
+#### Selecció per classe
+Les classes permeten aplicar estils a múltiples elements que comparteixin la mateixa classe, independentment del seu tipus d'etiqueta. A CSS, les classes es defineixen amb un punt (.) abans del nom de la classe.
+
+```css
+.nom-classe {
+  background-color: yellow;
+  padding: 10px;
+}
+```
+
+Els elements HTML que utilitzin aquesta classe tindran un fons de color groc i un farcit intern (padding) de 10px. Exemple d'ús en HTML:
+
+```html
+<div class="nom-classe">Aquest div utilitza la classe</div>
+<p class="nom-classe">Aquest paràgraf també utilitza la classe</p>
+```
+
+#### Selecció per ID
+Els IDs s'utilitzen per aplicar estils a un sol element específic, ja que els IDs són únics dins d'un document HTML. En CSS, els IDs es defineixen amb un coixinet (#) abans del nom de l'ID.
+
+```css
+#nom-id {
+  color: red;
+  font-weight: bold;
+}
+```
+
+Això només s'aplicarà a l'element que tingui aquest ID. Exemple d'ús en HTML:
+
+```html
+<p id="nom-id">Aquest paràgraf tindrà el text en vermell i negreta.</p>
+```
+
+
+### Herència d'estils en CSS
+
+#### Com funciona l'herència?
+
+Quan un element HTML té elements fills dins seu, aquests poden heretar algunes propietats CSS definides per l'element pare. L'herència permet que els estils definits per un element superior es propaguin als seus descendents, estalviant la necessitat d'aplicar els estils repetidament. 
+
+#### Exemples de propietats heretades
+
+Algunes propietats CSS s'hereten automàticament. Exemples comuns inclouen:
+
+- **color**: El color del text es transmet als elements fills.
+- **font-family**: La tipografia utilitzada pels elements pares s'aplica als elements fills.
+- **font-size**: La mida del text es propaga als elements dins del pare.
+- **line-height**: L'alçada de la línia també es transmet als elements fills.
+
+Exemple:
+
+```css
+body {
+  color: blue;
+  font-family: Arial, sans-serif;
+}
+```
+
+Tots els paràgrafs, encapçalaments i altres elements dins del body mostraran el text en color blau i amb la font Arial, a menys que s'hi defineixin altres estils específics.
+
+#### Propietats no heretades
+
+Algunes propietats no s'hereten automàticament perquè el seu comportament heretat no tindria sentit. Exemples de propietats que no s'hereten:
+
+- **margin**: Els marges no es transmeten als elements fills.
+- **padding**: El farcit (padding) no s'hereta.
+- **border**: Les propietats relacionades amb les vores tampoc s'hereten.
+
+Aquestes propietats s'han d'aplicar específicament a cada element si es vol que tinguin efecte sobre els elements fills.
+
+#### Controlar l'herència amb `inherit`
+
+Pots forçar que un element fill hereti una propietat que no s'heretaria per defecte utilitzant el valor `inherit`. Això obliga l'element fill a heretar la propietat del seu pare.
+
+Exemple:
+
+```css
+div {
+  background-color: red;
+}
+
+p {
+  background-color: inherit;
+}
+```
+
+En aquest cas, el paràgraf heretarà el color de fons vermell del seu element pare (div).
+
+#### Conclusió
+
+L'herència en CSS és una característica útil que permet aplicar estils de manera eficient, reduint la repetició de codi. No totes les propietats s'hereten automàticament, però amb el valor `inherit` es pot forçar l'herència quan sigui necessari.
