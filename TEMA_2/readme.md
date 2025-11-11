@@ -59,7 +59,7 @@
   - Color de text i fons (`color`, `background-color`).
   - Imatges de fons.
 
-## Sessió 8: [Model de Caixa de CSS (Box Model)](./html07.md)
+## Sessió 8: [Model de Caixa de CSS (Box Model)](./html08.md)
 - **Objectius**:
   - Entendre com funciona el model de caixa en CSS.
   - Aplicar marges, farcits, i dimensions als elements.
@@ -68,7 +68,7 @@
   - Diferència entre marges, farcits i contorns.
   - Exercicis pràctics per a entendre el model de caixa.
 
-## Sessió 9: [Posicionament i Disseny en CSS](./html08.md)
+## Sessió 9: [Posicionament i Disseny en CSS](./html09.md)
 - **Objectius**:
   - Aprendre a posicionar elements de manera relativa i absoluta.
   - Introducció al disseny amb CSS (flexbox, grid).
