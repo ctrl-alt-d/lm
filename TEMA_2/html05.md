@@ -1,11 +1,9 @@
-## Sessió 5: Organització d'una pàgina HTML
+# Sessió 5: Organització d'una pàgina HTML
 
-### Objectius
+## Objectius
 - Aprendre a utilitzar etiquetes HTML semàntiques per estructurar una pàgina web de manera correcta.
 - Entendre el propòsit de cada element estructural (`<header>`, `<footer>`, `<nav>`, `<section>`, `<article>`, `<aside>`).
 - Crear pàgines web ben organitzades i accessibles utilitzant elements semàntics.
-
-### Continguts
 
 ---
 
