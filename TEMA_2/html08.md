@@ -1,11 +1,11 @@
-## Sessió 7: Model de Caixa de CSS (Box Model)
+# Model de Caixa de CSS (Box Model)
 
-### Objectius
+## Objectius
 - Entendre com funciona el model de caixa en CSS.
 - Aplicar marges, farcits, i dimensions als elements.
 - Veure altres propietats relacionades amb el model de caixa però que no afecten l'espai ocupat per l'element (outline, box-shadow).
 
-### Continguts
+## Continguts
 
 #### 1. El Model de Caixa
 Tots els elements HTML es representen com a caixes que consten de diverses capes. Aquestes capes inclouen:

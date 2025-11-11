@@ -1,4 +1,4 @@
-# Sessió 1: Introducció a HTML
+# Introducció a HTML
 
 **Objectius:**
 1. Entendre què és HTML i la seva funció en el desenvolupament web.

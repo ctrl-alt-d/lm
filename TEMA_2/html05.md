@@ -1,4 +1,4 @@
-# Sessió 5: Organització d'una pàgina HTML
+# Organització d'una pàgina HTML
 
 ## Objectius
 - Aprendre a utilitzar etiquetes HTML semàntiques per estructurar una pàgina web de manera correcta.

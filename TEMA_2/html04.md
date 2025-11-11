@@ -1,4 +1,4 @@
-# Sessió de Formació: Creació de Formularis en HTML
+# Creació de Formularis en HTML
 
 ## Objectius
 

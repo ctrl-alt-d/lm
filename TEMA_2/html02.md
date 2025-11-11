@@ -1,4 +1,4 @@
-# Sessió 2: Etiquetes d'HTML
+# Etiquetes d'HTML
 
 **Objectius:**
 1. Comprendre l'ús d'etiquetes per estructurar continguts.

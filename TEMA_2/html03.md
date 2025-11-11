@@ -1,4 +1,4 @@
-# Sessió 3: Taules en HTML
+# Taules en HTML
 
 **Objectius:**
 1. Aprendre a crear taules i formularis en HTML.

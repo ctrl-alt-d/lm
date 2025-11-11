@@ -1,4 +1,4 @@
-## Sessió 8: Posicionament i Disseny en CSS
+## Posicionament i Disseny en CSS
 
 ### Objectius
 - Aprendre a posicionar elements de manera relativa i absoluta.

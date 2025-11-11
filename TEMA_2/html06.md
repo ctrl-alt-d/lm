@@ -1,10 +1,10 @@
-## Sessió 5: Introducció a CSS
+# Introducció a CSS
 
-### Objectius
+## Objectius
 - Entendre què és CSS i la seva relació amb HTML.
 - Aplicar estils bàsics a un document HTML.
 
-### Continguts
+## Continguts
 
 #### Definició de CSS
 CSS (Cascading Style Sheets) és el llenguatge utilitzat per definir l'aparença visual dels elements d'una pàgina HTML. Permet controlar aspectes com els colors, mides, tipus de lletra, marges, etc., i està dissenyat per separar la presentació del contingut.
