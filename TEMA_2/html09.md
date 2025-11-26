@@ -180,6 +180,11 @@ Per [centrar el text](https://stackoverflow.com/a/78651219/842935) dins el div p
 
 ---
 
+#### Exemple de posicionament vist a classe
+
+* (Carpeta amb l'exemple](./ExemplePosicionaments)
+
+
 #### 2. Introducció a Flexbox
 Flexbox és un model de disseny que facilita la creació de layouts flexibles i dinàmics. Permet alinear i distribuir elements de manera eficient dins d'un contenidor.
 
