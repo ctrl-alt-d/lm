@@ -8,6 +8,8 @@ __pycache__/
 
 examen*.txt
 examen*.gift
+examen*.md
+examen*.pdf
 
 # Distribution / packaging
 .Python
