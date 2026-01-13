@@ -60,7 +60,7 @@ Afegeix just abans de `</body>`:
     const boto = document.getElementById('boto');
 
     boto.addEventListener('mouseenter', function() {
-        boto.style.left = '';
+        boto.style.left = 'unset';
         boto.style.right = '20px';
     });
 </script>
