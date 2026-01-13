@@ -81,10 +81,10 @@ Modifica el JavaScript perquè el botó vagi alternant:
 
     boto.addEventListener('mouseenter', function() {
         if (aEsquerra) {
-            boto.style.left = '';
+            boto.style.left = 'unset';
             boto.style.right = '20px';
         } else {
-            boto.style.right = '';
+            boto.style.right = 'unset';
             boto.style.left = '20px';
         }
         aEsquerra = !aEsquerra;
@@ -128,10 +128,10 @@ Modifica el JavaScript perquè el botó vagi alternant:
 
         boto.addEventListener('mouseenter', function() {
             if (aEsquerra) {
-                boto.style.left = '';
+                boto.style.left = 'unset';
                 boto.style.right = '20px';
             } else {
-                boto.style.right = '';
+                boto.style.right = 'unset';
                 boto.style.left = '20px';
             }
             aEsquerra = !aEsquerra;
