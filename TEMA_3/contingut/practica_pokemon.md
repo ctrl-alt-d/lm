@@ -1,6 +1,6 @@
 # **Pràctica: Utilitzant la PokéAPI amb JavaScript**
 
-En aquesta pràctica aprendrem a consumir dades de la **PokéAPI** per mostrar informació sobre Pokémon a la nostra aplicació web.
+En aquesta pràctica aprendrem a consumir dades de la [PokéAPI](https://pokeapi.co/) per mostrar informació sobre Pokémon a la nostra aplicació web.
 
 ---
 
@@ -110,4 +110,3 @@ Prova d'afegir funcionalitats addicionals:
 
 ---
 
-Ara ja tens una Pokédex funcional utilitzant la PokéAPI! 🎉

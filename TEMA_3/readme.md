@@ -14,6 +14,8 @@
 
 ## Altres
 
+* [El botó juganer](./contingut/boto-juganer.md)
+* [La llista de la compra](./contingut/la-llista-de-la-compra.md)
 * [Pràctica PokéAPI](./contingut/practica_pokemon.md)
 
 > [!TIP]
