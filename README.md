@@ -13,7 +13,7 @@
 | Tema_1 | R1   | [Llenguatge de Marques](./TEMA_1/)           |       5 | 16 de de setembre de 2025 - 30 de de setembre de 2025 |
 | Tema_2 | R2   | [HTML i CSS](./TEMA_2/)                      |      10 | 7 de d’octubre de 2025 - 4 de de novembre de 2025     |
 | Tema_3 | R3   | [JavaScript](./TEMA_3/)                      |       4 | 11 de de novembre de 2025 - 18 de de novembre de 2025 |
-| Tema_4 | R6   | Persistència                    |       6 | 25 de de novembre de 2025 - 16 de de desembre de 2025 |
+| Tema_4 | R6   | [Persistència](./TEMA_4/)                    |       6 | 25 de de novembre de 2025 - 16 de de desembre de 2025 |
 | Tema_5 | R4   | Validació                       |       9 | 13 de de gener de 2026 - 10 de de febrer de 2026      |
 | Tema_6 | R5   | Conversió                       |       9 | 24 de de febrer de 2026 - 24 de de març de 2026       |
 | Tema_7 | R7   | Sistemes de gestió empresarials |       9 | 7 de d’abril de 2026 - 21 de d’abril de 2026          |
