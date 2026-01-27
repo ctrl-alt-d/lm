@@ -12,14 +12,29 @@ La **serialització** és el procés de convertir un objecte en memòria a un fo
 
 La **deserialització** és el procés invers: llegir dades d'un format (com JSON o XML) i convertir-les en objectes en memòria. Quan deserialitzem, hem d'indicar al deserialitzador quin tipus d'objecte esperem obtenir.
 
+## Casos d´ús
+
+Quan fem servir serialització i deserialització?
+
+### DTO
+
+![Il·lustració DTO](./Content/dto.png)
+
+El frontend i el backend s'envien entitats d'informació encapsulades en un llenguatge de marques. Serialitzen i deserialitzen la informació a cada extrem.
+
+### Persistència
+
+Persistir l'estat dels objectes per treurel's de memòria i hidratar-los més endavant quan es necessiti. Exemple: Paràmetres de preferències d'usuari.
+
+
 ## JSON
 
 JSON (JavaScript Object Notation) és un format lleuger i fàcil de llegir. És el format més utilitzat en aplicacions web modernes.
 
 | Tema | Descripció |
 |------|------------|
-| 📖 [Serialització JSON](json-serialitzacio.md) | Convertir objectes C# a JSON |
-| 📖 [Deserialització JSON](json-deserialitzacio.md) | Convertir JSON a objectes C# |
+| 📖 [Serialització JSON](./Content/json-serialitzacio.md) | Convertir objectes C# a JSON |
+| 📖 [Deserialització JSON](./Content/json-deserialitzacio.md) | Convertir JSON a objectes C# |
 
 ## XML
 
@@ -27,8 +42,8 @@ XML (eXtensible Markup Language) és un format més verbós però molt potent pe
 
 | Tema | Descripció |
 |------|------------|
-| 📖 [Serialització XML](xml-serialitzacio.md) | Convertir objectes C# a XML |
-| 📖 [Deserialització XML](xml-deserialitzacio.md) | Convertir XML a objectes C# |
+| 📖 [Serialització XML](./Content/xml-serialitzacio.md) | Convertir objectes C# a XML |
+| 📖 [Deserialització XML](./Content/xml-deserialitzacio.md) | Convertir XML a objectes C# |
 
 ## Comparació JSON vs XML
 

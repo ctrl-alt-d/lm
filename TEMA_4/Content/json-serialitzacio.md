@@ -87,3 +87,28 @@ Mira la [documentació de Microsoft](https://learn.microsoft.com/en-us/dotnet/st
 ## Exercicis
 
 * Prepara en memòria una estructura més complexa que no pas la que hem fet servir a l'exemple. Aquesta estructura contindrà llistes d'objectes i dicionaris. Serialitza la teva estructura.
+
+## Extres
+
+* Què passa si vull personalitzar les propietats i valors del json que serialitzo, per exemple, canviar els noms de les propietats? Al document [How to customize property names and values with System.Text.Json](https://learn.microsoft.com/en-us/dotnet/standard/serialization/system-text-json/customize-properties) trobaràs explicat com fer-ho:
+
+```c#
+var serializeOptions = new JsonSerializerOptions
+{
+    PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+    DictionaryKeyPolicy = JsonNamingPolicy.CamelCase,
+    WriteIndented = true
+};
+jsonString = JsonSerializer.Serialize(weatherForecast, serializeOptions);
+```
+
+```c#
+public class WeatherForecastWithPropertyName
+{
+    public DateTimeOffset Date { get; set; }
+    public int TemperatureCelsius { get; set; }
+    public string? Summary { get; set; }
+    [JsonPropertyName("Wind")]
+    public int WindSpeed { get; set; }
+}
+```
