@@ -102,3 +102,36 @@ class Program
 }
 
 ```
+
+## .csproj
+Recorda que quan afegim fitxers externs al projecte (per exemple `archivo.json` i `esquema.json`) cal que aquests siguin copiats a la carpeta de sortida del build perquè l'executable els pugui llegir en temps d'execució (p. ex. `bin/Debug/net6.0`).
+
+Hi ha dues maneres bàsiques de fer-ho:
+
+- Des de l'IDE: a l'Explorador de solucions selecciona el fitxer, obre `Properties` i a la propietat **Copy to Output Directory** tria `Copy always` o `Copy if newer`.
+- Editant el fitxer `.csproj` manualment: afegeix entrades dins de `<ItemGroup>` per marcar els fitxers com a `Content` o `None` i indicar `CopyToOutputDirectory`.
+
+Exemples pràctics (afegeix-los dins del teu `.csproj`):
+
+1) Exemple per a un fitxer concret (`archivo.json`, `esquema.json`):
+
+```xml
+  <ItemGroup>
+    <None Include="archivo.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="esquema.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+```
+
+2) Exemple per copiar tots els `.json` del projecte (comodí):
+
+```xml
+  <ItemGroup>
+    <None Include="**\*.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+```

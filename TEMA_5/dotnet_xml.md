@@ -1,6 +1,6 @@
 # Validar un xml contra el seu esquema
 
-## xml:
+## XML
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -104,4 +104,50 @@ class Program
 
 
 }
+```
+
+## .csproj
+Recorda que quan afegim fitxers externs al projecte (per exemple `archivo.xml` i `archivo.xsd`) cal que aquests siguin copiats a la carpeta de sortida del build perquè l'executable els pugui llegir en temps d'execució (p. ex. `bin/Debug/net10.0`).
+
+Hi ha dues maneres bàsiques de fer-ho:
+
+- Des de l'IDE: a l'Explorador de solucions selecciona el fitxer, obre `Properties` i a la propietat **Copy to Output Directory** tria `Copy always` o `Copy if newer`.
+- Editant el fitxer `.csproj` manualment: afegeix entrades dins de `<ItemGroup>` per marcar els fitxers com a `Content` o `None` i indicar `CopyToOutputDirectory`.
+
+Exemples útils (afegeix-los dins del teu `.csproj`):
+
+1) Exemple per a un fitxer concret (`archivo.xml`, `archivo.xsd`):
+
+```xml
+  <ItemGroup>
+    <None Include="archivo.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="archivo.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+```
+
+2) Exemple per copiar tots els `.xml` i `.xsd` del projecte (comodí):
+
+```xml
+  <ItemGroup>
+    <None Include="**\*.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="**\*.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+```
+
+3) Exemple si tens una carpeta `Assets` amb diversos recursos:
+
+```xml
+  <ItemGroup>
+    <None Include="Assets\**\*.*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
 ```
