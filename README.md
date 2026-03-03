@@ -15,16 +15,34 @@
 | Tema_3 | R3   | [JavaScript](./TEMA_3/)                      |       4 | 11 de de novembre de 2025 - 18 de de novembre de 2025 |
 | Tema_4 | R6   | [Persistència](./TEMA_4/)                    |       6 | 25 de de novembre de 2025 - 16 de de desembre de 2025 |
 | Tema_5 | R4   | [Validació](./TEMA_5/)                       |       9 | 13 de de gener de 2026 - 10 de de febrer de 2026      |
-| Tema_6 | R5   | Conversió                       |       9 | 24 de de febrer de 2026 - 24 de de març de 2026       |
+| Tema_6 | R5   | Conversió                       |       9 | 24 de de febrer de 2026 - 24 de de març de 2026   (*1)    |
 | Tema_7 | R7   | Sistemes de gestió empresarials |       9 | 7 de d’abril de 2026 - 21 de d’abril de 2026          |
+|       | [Mini projecte DAW](https://github.com/MINIPROJECTE-DAW2026/MiniProjecte)| | | 27 abril - 2 maig         |
 
->A partir del 27 de d’abril de 2026 fins final de curs posarem en pràctica llenguatge de marques al mini-projecte DAW.
+(*1) del disabte 28 de març al dilluns 6 d'abril hi ha setmana santa.
+
+> *Recuperacions*
+> Hi haurà un examen de recuperació / pujar nota dins la convocatòria ordinària. A Aquest examen es pot optar a recuperar o pujar nota d'un màxim de dos RA. El dia de l'examen serà el **dimarts dia 24 de març** a les hores de Llenguatge de Marques (sense pati)
+> Hi haurà una convocatòria extraordinaria per recuperar les RA no superades. Entre l'1 i el 5 de juny.
+
+> [!CAUTION]
+> Seguint les instruccions del **PCC (Projecte Curricular de Centre) Ins Cendrassos**, les `capacitats clau` **no** s'avaluen dins els `RAs (resultats d'aprenentatge)`, sino que s'avaluen de manera independent i la seva nota se suma a la nota ponderada de les `RAs` amb un pes d'un 10% del total de la nota del `mòdul professional`. Llegir la `guia de l'estudiant` per més detalls. Això està en fase de canvi però encara no està actualitzat el PCC, un cop s'actualitzi, aquí es publicarà el nou criteri d'avaluació.
 
 ```math
 QM = 0.8 \cdot (0.1 \cdot RA_1 + 0.2 \cdot RA_2 + 0.1 \cdot RA_3 + 0.2 \cdot RA_4 + 0.1 \cdot RA_5 + 0.2 \cdot RA_6 + 0.1 \cdot RA_7) + 0.1 \cdot CC + 0.1 \cdot EE
 ```
 
-_Nota: Seguint les instruccions dictades pel centre (Ins Cendrassos) des del curs 2024-25, les `capacitats clau` **no** s'avaluen dins els `resultats d'aprenentatge`, sino que s'avaluen de manera independent i la seva nota se suma a la nota ponderada de les `RAs` amb un pes d'un 10% del total de la nota del `mòdul professional`. Llegir la `guia de l'estudiant` o el `Projecte Curricular de Centre` per més detalls._
+> [!CAUTION]
+> Tenim indicacions no reflectides encara al **del PCC (Projecte Curricular de Centre) Ins Cendrassos** que canvia el criteria a l'avaluació de les capacitats clau. Ara les capacitats clau passen a ser un criteri d'avaluació més dins cada Resultat d'Aprenentage, mantenint una nota independent entre la nota de "tècnica" i la nota de capacitats clau. Les capacitats clau representen un 10% de la nota del RA (en aquest mòdul professional, no es pot superar un RA sense una nota igual o superior a 5 de nota tècnica) Un cop aquestes indicacions es publiquin al PCC s'aplicaran automàticament a aquest mòdul professional seguint les indicacions del centre.
+
+
+```math
+QM = 0.8 \cdot (0.1 \cdot RA_1 + 0.2 \cdot RA_2 + 0.1 \cdot RA_3 + 0.2 \cdot RA_4 + 0.1 \cdot RA_5 + 0.2 \cdot RA_6 + 0.1 \cdot RA_7) + 0.1 \cdot CC + 0.1 \cdot EE
+```
+
+On cada RA conté un 10% de capacitats clau.
+
+
 
 
 ## Resultats d'aprenentatge
