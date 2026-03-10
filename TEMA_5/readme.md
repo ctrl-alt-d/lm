@@ -24,7 +24,8 @@ JSON (JavaScript Object Notation) és un format lleuger per a l'intercanvi de da
 La validació amb JSON Schema s'executa comparant l'objecte JSON amb l'esquema; les eines de validació retornen errors detallats quan alguna propietat no compleix les regles. Això facilita la robustesa en APIs, la verificació de dades d'entrada i la generació automàtica de documents de prova.
 
 * [Conceptes validació JSON](./xuletajson.md)
-* [Exemple validació XML amb C#](./dotnet_json.md)
+* [Exemple validació JSON amb C#](./dotnet_json.md)
+* [Generar JSON Schema amb GetJsonSchemaAsNode](./dotnet_GetJsonSchemaAsNode.md)
 
 # Avaluació
 

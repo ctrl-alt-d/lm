@@ -1,4 +1,4 @@
-# Validar un jsnon contra el seu esquema
+# Validar un json contra el seu esquema
 
 Nota, les llibreries dotnet encara no suporten validació d'esquema, s'ha fet servir https://www.nuget.org/packages/JsonSchema.Net/
 
