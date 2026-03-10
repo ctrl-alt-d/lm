@@ -16,6 +16,7 @@ La validació d'un XML contra un XSD es fa carregant l'esquema i comprovant que 
 
 * [Conceptes validació XML](./xuletaxml.md)
 * [Exemple validació XML amb C#](./dotnet_xml.md)
+* [Generar XSD amb XmlSchemaExporter](./dotnet_GetXmlSchema.md)
 
 ## JSON
 
