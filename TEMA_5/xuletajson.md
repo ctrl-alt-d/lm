@@ -129,6 +129,7 @@ Si busques informació sobre **JSON Schema**, aquí tens alguns recursos útils:
 
 ## 🌍 Web oficial
 - [JSON Schema](https://json-schema.org/) – Documentació oficial, guies d’ús i especificacions.
+- [Creating your first schema](https://json-schema.org/learn/getting-started-step-by-step)
 
 ## 📂 Repositoris oficials
 - [JSON Schema a GitHub](https://github.com/json-schema-org) – Repositoris amb especificacions i eines relacionades.
