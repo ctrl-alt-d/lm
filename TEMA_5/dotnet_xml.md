@@ -1,5 +1,11 @@
 # Validar un xml contra el seu esquema
 
+[What is an XML Schema?](https://www.w3schools.com/xml/schema_intro.asp)
+
+> An XML Schema describes the structure of an XML document.
+>
+> The XML Schema language is also referred to as XML Schema Definition (XSD).
+
 ## XML
 
 ```xml
@@ -29,7 +35,7 @@
 ## C#
 
 
-```c#
+```csharp
 using System;
 using System.IO;
 using System.Xml;

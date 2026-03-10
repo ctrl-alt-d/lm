@@ -3,6 +3,10 @@
 
 * [Què és json schema?](https://json-schema.org/overview/what-is-jsonschema#what-is-json-schema)
 
+> JSON Schema is a declarative language for defining structure and constraints for JSON data.
+
+
+
 ## Exemple d'un JSON que compleix amb un JSON Schema
 
 ```json
