@@ -12,6 +12,7 @@ examen*.txt
 examen*.gift
 examen*.md
 examen*.pdf
+examen*.docx
 
 # Distribution / packaging
 .Python
