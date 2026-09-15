@@ -8,22 +8,19 @@
 
 ## Activitats d'ensenyament aprenentatge (AEA) i temporització
 
-| TEMA   | RA   | Nom                             |   Hores | Data inici - Data fi                                  |
-|:-------|:-----|:--------------------------------|--------:|:------------------------------------------------------|
-| Tema_1 | R1   | [Llenguatge de Marques](./TEMA_1/)           |       5 | 16 de de setembre de 2025 - 30 de de setembre de 2025 |
-| Tema_2 | R2   | [HTML i CSS](./TEMA_2/)                      |      10 | 7 de d’octubre de 2025 - 4 de de novembre de 2025     |
-| Tema_3 | R3   | [JavaScript](./TEMA_3/)                      |       4 | 11 de de novembre de 2025 - 18 de de novembre de 2025 |
-| Tema_4 | R6   | [Persistència](./TEMA_4/)                    |       6 | 25 de de novembre de 2025 - 16 de de desembre de 2025 |
-| Tema_5 | R4   | [Validació](./TEMA_5/)                       |       9 | 13 de de gener de 2026 - 10 de de febrer de 2026      |
-| Tema_6 | R5   | Conversió                       |       9 | 24 de de febrer de 2026 - 24 de de març de 2026   (*1)    |
-| Tema_7 | R7   | Sistemes de gestió empresarials |       9 | 7 de d’abril de 2026 - 21 de d’abril de 2026          |
-|       | [Mini projecte DAW](https://github.com/MINIPROJECTE-DAW2026/MiniProjecte)| | | 27 abril - 2 maig         |
 
-(*1) del disabte 28 de març al dilluns 6 d'abril hi ha setmana santa.
-
+| TEMA   | RA   | Nom                                          |   Hores | Data inici - Data fi                                  |
+|:-------|:-----|:---------------------------------------------|--------:|:------------------------------------------------------|
+| Tema_1 | R1   | [Llenguatge de Marques](./TEMA_1/)           |       5 | 14 de de setembre de 2026 - 28 de de setembre de 2026 |
+| Tema_2 | R2   | [HTML i CSS](./TEMA_2/)                      |       8 | 2 de d’octubre de 2026 - 30 de d’octubre de 2026      |
+| Tema_3 | R3   | [JavaScript](./TEMA_3/)                      |       4 | 2 de de novembre de 2026 - 13 de de novembre de 2026  |
+| Tema_4 | R6   | [Persistència](./TEMA_4/)                    |       5 | 20 de de novembre de 2026 - 4 de de desembre de 2026  |
+| Tema_5 | R4   | [Validació](./TEMA_5/)                       |       8 | 11 de de desembre de 2026 - 18 de de gener de 2027    |
+| Tema_6 | R5   | [Conversió](./TEMA_6/)                       |       8 | 22 de de gener de 2027 - 22 de de febrer de 2027      |
+| Tema_7 | R7   | Sistemes de gestió empresarials              |       8 | 26 de de febrer de 2027 - 7 de de maig de 2027        |
 
 ```math
-QM = 0.8 \cdot (0.1 \cdot RA_1 + 0.2 \cdot RA_2 + 0.1 \cdot RA_3 + 0.2 \cdot RA_4 + 0.1 \cdot RA_5 + 0.2 \cdot RA_6 + 0.1 \cdot RA_7) + 0.1 \cdot CC + 0.1 \cdot EE
+QM = 0.9 \cdot (0.1 \cdot RA_1 + 0.2 \cdot RA_2 + 0.1 \cdot RA_3 + 0.2 \cdot RA_4 + 0.1 \cdot RA_5 + 0.2 \cdot RA_6 + 0.1 \cdot RA_7) + 0.1 \cdot EE
 ```
 
 On cada RA conté un 10% de capacitats clau.
