@@ -38,7 +38,7 @@
   - Aprendre a utilitzar etiquetes HTML semàntiques per estructurar una pàgina web.
   - Entendre el propòsit de cada element estructural.
 - **Continguts**:
-  - Els elements `<header>`, `<footer>`, `<nav>`, `<section>`, `<article>`, `<aside>`.
+  - Els elements `<header>`, `<footer>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<aside>`.
   - Estructura semàntica d'una pàgina web.
   - Beneficis per a accessibilitat i SEO.
 

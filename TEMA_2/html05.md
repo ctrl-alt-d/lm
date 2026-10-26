@@ -2,7 +2,7 @@
 
 ## Objectius
 - Aprendre a utilitzar etiquetes HTML semàntiques per estructurar una pàgina web de manera correcta.
-- Entendre el propòsit de cada element estructural (`<header>`, `<footer>`, `<nav>`, `<section>`, `<article>`, `<aside>`).
+- Entendre el propòsit de cada element estructural (`<header>`, `<footer>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<aside>`).
 - Crear pàgines web ben organitzades i accessibles utilitzant elements semàntics.
 
 ---
@@ -15,6 +15,7 @@ Els elements que veurem en aquesta sessió són:
 - `<header>`: Encapçalament de la pàgina o secció
 - `<footer>`: Peu de pàgina o secció
 - `<nav>`: Navegació principal
+- `<main>`: Contingut principal de la pàgina
 - `<section>`: Secció genèrica de contingut
 - `<article>`: Contingut independent (entrada de blog, notícia, etc.)
 - `<aside>`: Contingut relacionat però secundari (barra lateral)
@@ -191,7 +192,47 @@ L'element `<nav>` representa una secció amb enllaços de navegació. S'utilitza
 
 ---
 
-## 5. L'Element `<section>`
+## 5. L'Element `<main>`
+
+### Descripció
+L'element `<main>` representa el contingut principal del document, directament relacionat amb el tema o la funció de la pàgina. Permet als lectors de pantalla identificar i accedir a aquest contingut.
+
+### Característiques
+- **Semàntica**: Identifica el contingut principal i únic de la pàgina.
+- **Ús únic**: Una pàgina només ha de tenir un `<main>` visible (sense l'atribut `hidden`).
+- **Ubicació**: No ha de ser descendent de `<header>`, `<footer>`, `<nav>`, `<article>` ni `<aside>`.
+- **Contingut**: Pot contenir seccions i articles. La capçalera, la navegació i el peu de pàgina comuns del lloc queden fora del `<main>`.
+
+### Exemple
+```html
+<body>
+    <header>
+        <h1>El meu lloc web</h1>
+        <nav>
+            <a href="/">Inici</a>
+            <a href="/contacte">Contacte</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Els meus projectes</h2>
+            <p>Aquí trobaràs els projectes que he desenvolupat.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 El meu lloc web</p>
+    </footer>
+</body>
+```
+
+### Diferència entre `<main>` i `<section>`
+`<main>` identifica el contingut principal de tota la pàgina, mentre que `<section>` agrupa contingut sobre un tema concret. Un únic `<main>` pot contenir diverses seccions.
+
+---
+
+## 6. L'Element `<section>`
 
 ### Descripció
 L'element `<section>` representa una secció temàtica genèrica de contingut. S'utilitza per agrupar contingut relacionat amb un tema.
@@ -239,16 +280,18 @@ L'element `<section>` representa una secció temàtica genèrica de contingut. S
         <nav>...</nav>
     </header>
     
-    <section>
-        <h2>Benvinguda</h2>
-        <p>Aquesta és la secció de benvinguda...</p>
-    </section>
-    
-    <section>
-        <h2>Últimes Notícies</h2>
-        <article>...</article>
-        <article>...</article>
-    </section>
+    <main>
+        <section>
+            <h2>Benvinguda</h2>
+            <p>Aquesta és la secció de benvinguda...</p>
+        </section>
+
+        <section>
+            <h2>Últimes Notícies</h2>
+            <article>...</article>
+            <article>...</article>
+        </section>
+    </main>
     
     <footer>...</footer>
 </body>
@@ -256,7 +299,7 @@ L'element `<section>` representa una secció temàtica genèrica de contingut. S
 
 ---
 
-## 6. L'Element `<article>`
+## 7. L'Element `<article>`
 
 ### Descripció
 L'element `<article>` representa contingut independent que pot funcionar autònomament. Exemples: entrada de blog, notícia, comentari, review de producte, etc.
@@ -325,7 +368,7 @@ L'element `<article>` representa contingut independent que pot funcionar autòno
 
 ---
 
-## 7. L'Element `<aside>`
+## 8. L'Element `<aside>`
 
 ### Descripció
 L'element `<aside>` representa contingut relacionat però secundari. Típicament utilitzat per a barres laterals, barres de cita (sidebars), o anuncis.
@@ -404,7 +447,7 @@ L'element `<aside>` representa contingut relacionat però secundari. Típicament
 
 ---
 
-## 8. Estructura Completa d'una Pàgina Web
+## 9. Estructura Completa d'una Pàgina Web
 
 ### Exemple: Portal de Bloc
 ```html
@@ -512,20 +555,21 @@ L'element `<aside>` representa contingut relacionat però secundari. Típicament
 
 ---
 
-## 9. Taula Comparativa dels Elements
+## 10. Taula Comparativa dels Elements
 
 | Element | Propòsit | Ubicació | Múltiple |
 |---------|----------|----------|----------|
 | `<header>` | Introducció, navegació | Superior | Sí (per secció) |
 | `<footer>` | Informació final | Inferior | Sí (per secció) |
 | `<nav>` | Enllaços de navegació | Variable | Sí |
+| `<main>` | Contingut principal del document | Dins body, fora de header, footer i nav | Només un de visible |
 | `<section>` | Agrupa contingut temàtic | Dins main | Sí |
 | `<article>` | Contingut independent | Dins section o main | Sí |
 | `<aside>` | Contingut secundari | Al costat de main | Generalment 1 |
 
 ---
 
-## 10. Beneficis dels Elements Semàntics
+## 11. Beneficis dels Elements Semàntics
 
 ### 1. **Accessibilitat**
 - Els lectors de pantalla entenen millor l'estructura
@@ -549,7 +593,7 @@ L'element `<aside>` representa contingut relacionat però secundari. Típicament
 
 ---
 
-## 11. Exemple de Pàgina amb Estil CSS
+## 12. Exemple de Pàgina amb Estil CSS
 
 ```html
 <!DOCTYPE html>
@@ -663,13 +707,13 @@ L'element `<aside>` representa contingut relacionat però secundari. Típicament
 
 ---
 
-## 11. Els Elements `<span>` i `<div>`
+## 13. Els Elements `<span>` i `<div>`
 
 ### Introducció
 
 Mentre que els elements semàntics (`<header>`, `<section>`, `<article>`, etc.) posseeixen significat i propòsit específic, els elements `<span>` i `<div>` són **genèrics** i sense significat semàntic. S'utilitzen quan no hi ha un element semàntic apropiat o quan necessites contenidors purs de disposició.
 
-### 11.1. L'Element `<div>` (Division)
+### 13.1. L'Element `<div>` (Division)
 
 #### Descripció
 El `<div>` és un element de **bloc** genèric que agrupa contingut sense significat semàntic. Es tracta del contenidor més versàtil en HTML.
@@ -795,7 +839,7 @@ El `<div>` és un element de **bloc** genèric que agrupa contingut sense signif
 
 ---
 
-### 11.2. L'Element `<span>`
+### 13.2. L'Element `<span>`
 
 #### Descripció
 El `<span>` és un element **en línia** (inline) genèric que agrupa petit contingut sense significat semàntic. Es tracta d'un contenidor inline versàtil.
@@ -910,7 +954,7 @@ El `<span>` és un element **en línia** (inline) genèric que agrupa petit cont
 
 ---
 
-### 11.3. Comparació: `<div>` vs `<span>`
+### 13.3. Comparació: `<div>` vs `<span>`
 
 | Aspecte | `<div>` | `<span>` |
 |---------|---------|----------|
@@ -925,11 +969,12 @@ El `<span>` és un element **en línia** (inline) genèric que agrupa petit cont
 
 ---
 
-### 11.4. Quan NO Utilitzar `<div>` o `<span>`
+### 13.4. Quan NO Utilitzar `<div>` o `<span>`
 
 **Utilitza elements semàntics en lloc de `<div>`:**
 - Per a capçaleres: `<header>` en lloc de `<div class="header">`
 - Per a navegació: `<nav>` en lloc de `<div class="navigation">`
+- Per al contingut principal: `<main>` en lloc de `<div class="main">`
 - Per a articles: `<article>` en lloc de `<div class="post">`
 - Per a seccions: `<section>` en lloc de `<div class="section">`
 - Per a barres laterals: `<aside>` en lloc de `<div class="sidebar">`
@@ -942,7 +987,7 @@ El `<span>` és un element **en línia** (inline) genèric que agrupa petit cont
 
 ---
 
-### 11.5. Exemple Pràctic: Comparació Visual
+### 13.5. Exemple Pràctic: Comparació Visual
 
 ```html
 <!DOCTYPE html>
@@ -1017,7 +1062,7 @@ El `<span>` és un element **en línia** (inline) genèric que agrupa petit cont
 
 ---
 
-### 11.6. Resumen de Bon Ús
+### 13.6. Resumen de Bon Ús
 
 #### Usa `<div>` quan:
 - Necessites agrupar múltiples elements
@@ -1033,23 +1078,23 @@ El `<span>` és un element **en línia** (inline) genèric que agrupa petit cont
 - No hi ha un element semàntic inline más apropiat (como `<strong>`, `<em>`, `<code>`)
 
 #### Usa elements semàntics quan:
-- Tens una `<header>`, `<footer>`, `<nav>`, `<section>`, `<article>`, o `<aside>`
+- Tens una `<header>`, `<footer>`, `<nav>`, `<main>`, `<section>`, `<article>`, o `<aside>`
 - Vols indicar significat al contingut
 - Millora l'accessibilitat i el SEO
 - Facilita la mantenibilitat del codi
 
 ---
 
-## 12. Exercicis Pràctics
+## 14. Exercicis Pràctics
 
 ### Exercici 1: Estructura Bàsica
-Crea una pàgina web amb els elements `<header>`, `<nav>`, `<section>`, i `<footer>`.
+Crea una pàgina web amb els elements `<header>`, `<nav>`, `<main>`, `<section>`, i `<footer>`. Situa la secció dins del `<main>`.
 
 ### Exercici 2: Blog Complet
-Crea una estructura de blog amb múltiples `<article>` elements dins una `<section>`, un `<aside>` amb categories, i una `<nav>` de navegació.
+Crea una estructura de blog amb un `<main>` que contingui múltiples `<article>` elements dins una `<section>`, un `<aside>` amb categories, i una `<nav>` de navegació fora del `<main>`.
 
 ### Exercici 3: Pàgina de Producte
-Estructura una pàgina de producte online amb `<header>` (logotip i navegació), secció principal amb descripció, `<aside>` amb preus i `<footer>` amb informació de contacte.
+Estructura una pàgina de producte online amb `<header>` (logotip i navegació), un `<main>` amb una secció de descripció del producte, `<aside>` amb preus i `<footer>` amb informació de contacte.
 
 ### Exercici 4: Millora d'Accessibilitat
 Pren una pàgina HTML anterior que hayas creat i refactoritza-la per usar elements semàntics correctament.
@@ -1086,7 +1131,7 @@ Pren aquest codi no semàntic i refactoritza'l:
 
 ---
 
-## 13. Recursos Addicionals
+## 15. Recursos Addicionals
 
 - [MDN Web Docs - HTML Semàntic](https://developer.mozilla.org/es/docs/Glossary/Semantics)
 - [W3C - HTML5 Specification](https://www.w3.org/TR/html5/)
