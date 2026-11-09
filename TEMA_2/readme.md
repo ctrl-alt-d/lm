@@ -1,5 +1,9 @@
 # HTML i CSS
 
+## Pràctica conjunta: [Donem estil a un formulari](./practica-css-formulari/readme.md)
+
+Repàs de les sessions 6 i 7 i introducció guiada a la sessió 8. Partim d'un formulari sense estils i hi afegim CSS extern, un bloc `<style>`, un atribut `style`, classes i IDs. Inclou fitxers inicials, activitats per fer entre tots i una guia docent amb solució. La part de model de caixa es pot reservar per a una segona classe.
+
 ## Sessió 1: [Introducció a HTML](./html01.md)
 - **Objectius**:
   - Entendre què és HTML i la seva funció.

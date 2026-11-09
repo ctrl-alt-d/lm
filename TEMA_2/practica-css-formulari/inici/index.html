@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscripció al taller de creació web</title>
+  <!-- Pas 1: enllaça el fitxer estils.css. -->
+  <!-- Pas 4: afegeix un bloc style després de l'enllaç. -->
+</head>
+<body>
+  <header>
+    <p>Aula de tecnologia</p>
+    <h1>Taller de creació web</h1>
+    <p>Una tarda per començar a crear la teva primera pàgina.</p>
+  </header>
+
+  <main>
+    <h2>Reserva la teva plaça</h2>
+    <!-- Pas 3: aquest avís tindrà una classe i un ID propi. -->
+    <p>Places limitades: ens organitzarem en grups petits.</p>
+    <p>Els camps marcats amb * són obligatoris.</p>
+
+    <form>
+      <fieldset>
+        <legend>Dades de contacte</legend>
+        <div>
+          <label for="nom">Nom i cognoms *</label>
+          <input type="text" id="nom" name="nom" autocomplete="name" required>
+        </div>
+        <div>
+          <label for="correu">Correu electrònic *</label>
+          <input type="email" id="correu" name="correu" autocomplete="email"
+                 aria-describedby="ajuda-correu" required>
+          <p id="ajuda-correu">Fes servir el correu del centre.</p>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferències del taller</legend>
+        <div>
+          <label for="taller">Què t'agradaria practicar?</label>
+          <select id="taller" name="taller">
+            <option value="html">Estructura amb HTML</option>
+            <option value="css">Disseny amb CSS</option>
+            <option value="formularis">Formularis</option>
+          </select>
+        </div>
+        <div>
+          <label for="comentaris">Comentaris</label>
+          <textarea id="comentaris" name="comentaris" rows="4"
+                    aria-describedby="ajuda-comentaris"></textarea>
+          <p id="ajuda-comentaris">Explica què voldries aprendre. És opcional.</p>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Has creat alguna pàgina abans?</legend>
+        <div>
+          <input type="radio" id="experiencia-si" name="experiencia" value="si">
+          <label for="experiencia-si">Sí, ja n'he fet alguna.</label>
+        </div>
+        <div>
+          <input type="radio" id="experiencia-no" name="experiencia" value="no" checked>
+          <label for="experiencia-no">No, serà la primera.</label>
+        </div>
+      </fieldset>
+
+      <p>
+        <input type="checkbox" id="recordatori" name="recordatori" value="si">
+        <label for="recordatori">Vull rebre un recordatori del taller.</label>
+      </p>
+      <button type="button">Inscriure'm (demostració)</button>
+      <p>Formulari de demostració: el botó no envia dades.</p>
+    </form>
+  </main>
+
+  <footer>
+    <p>Pràctica de llenguatges de marques · HTML i CSS</p>
+  </footer>
+</body>
+</html>
